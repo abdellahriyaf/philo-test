@@ -1,26 +1,390 @@
-<header class="hero"><div class="wrap"><h1>الحق والعدالة</h1><p class="lede">جملة تلخّص محتوى الدرس ومحاوره الثلاثة.</p></div></header>
-<section id="concepts" data-nav="المفاهيم" class="block concepts-block"><div class="wrap"><h2>المفاهيم المحيطة بمفهوم الحق والعدالة</h2><dl class="concepts"><div class="concept"><dt>المفهوم</dt><dd>تعريفه…</dd></div></dl></div></section>
-<section id="axis-1" data-nav="عنوان المحور الأول" class="block axis-1"><div class="wrap">
-<p class="kicker">المحور الأول</p><h2>عنوان المحور الأول</h2>
-<div class="problem"><p><strong>الإشكال:</strong> …</p></div>
-<h3>الأقوال</h3><ol class="quotes"><li><p class="qtext">«…»</p><p class="qsrc"><b>الفيلسوف</b><br>المصدر</p></li></ol>
-<h3>الآراء الحجاجية</h3><ul class="theses"><li><strong>الأطروحة.</strong><p>صاحب الرأي والحجة…</p></li></ul>
-<h3>الحجاج</h3><ul class="args"><li><span class="label">حجة:</span> …</li></ul>
-<h3>الأفكار الحجاجية</h3><ul class="ideas"><li>…</li></ul>
-</div></section>
-<section id="axis-2" data-nav="عنوان المحور الثاني" class="block axis-2"><div class="wrap">
-<p class="kicker">المحور الثاني</p><h2>عنوان المحور الثاني</h2>
-<div class="problem"><p><strong>الإشكال:</strong> …</p></div>
-<h3>الأقوال</h3><ol class="quotes"><li><p class="qtext">«…»</p><p class="qsrc"><b>الفيلسوف</b><br>المصدر</p></li></ol>
-<h3>الآراء الحجاجية</h3><ul class="theses"><li><strong>الأطروحة.</strong><p>صاحب الرأي والحجة…</p></li></ul>
-<h3>الحجاج</h3><ul class="args"><li><span class="label">حجة:</span> …</li></ul>
-<h3>الأفكار الحجاجية</h3><ul class="ideas"><li>…</li></ul>
-</div></section>
-<section id="axis-3" data-nav="عنوان المحور الثالث" class="block axis-3"><div class="wrap">
-<p class="kicker">المحور الثالث</p><h2>عنوان المحور الثالث</h2>
-<div class="problem"><p><strong>الإشكال:</strong> …</p></div>
-<h3>الأقوال</h3><ol class="quotes"><li><p class="qtext">«…»</p><p class="qsrc"><b>الفيلسوف</b><br>المصدر</p></li></ol>
-<h3>الآراء الحجاجية</h3><ul class="theses"><li><strong>الأطروحة.</strong><p>صاحب الرأي والحجة…</p></li></ul>
-<h3>الحجاج</h3><ul class="args"><li><span class="label">حجة:</span> …</li></ul>
-<h3>الأفكار الحجاجية</h3><ul class="ideas"><li>…</li></ul>
-</div></section>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الحق والعدالة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3f5f1;--surface:#fafbf8;--ink:#17212b;--muted:#5b6670;--rule:#d5dbd6;--brass:#7a5c1e;--pine:#2e5c4f;--indigo:#2d4a7b;--oxblood:#8a2e3b;--hbg:#17212b;--hfg:#f3f5f1;--hmu:#aab6b0;--serif:"Amiri",serif;--sans:"IBM Plex Sans Arabic",sans-serif}
+@media (prefers-color-scheme:dark){:root{--paper:#0f1517;--surface:#151d20;--ink:#e4eae5;--muted:#98a5a0;--rule:#29353a;--brass:#d4ac60;--pine:#85c1ad;--indigo:#a4b9ea;--oxblood:#e5919e;--hbg:#1a2427;--hfg:#e4eae5;--hmu:#98a5a0}}
+*{box-sizing:border-box}
+html{scroll-padding-top:4rem}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.02rem;line-height:1.95}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--indigo)}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.hero{background:var(--hbg);color:var(--hfg);padding:3rem 0 2.5rem;position:relative}
+.hero::after{content:"";position:absolute;inset-inline:0;bottom:0;height:6px;background:linear-gradient(to left,var(--pine) 0 33.333%,var(--indigo) 33.333% 66.666%,var(--oxblood) 66.666% 100%)}
+.hero h1{font-family:var(--serif);font-size:2.6rem;line-height:1.4;margin:0 0 .4rem}
+.lede{color:var(--hmu);margin:0;max-width:44rem}
+.nav{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding-block:.5rem}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;padding:.15rem 0;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--brass)}
+.block{--a:var(--ink);padding:2.75rem 0;border-bottom:1px solid var(--rule)}
+.axis-1{--a:var(--pine)}.axis-2{--a:var(--indigo)}.axis-3{--a:var(--oxblood)}.glossary-block{--a:var(--brass)}
+.kicker{color:var(--a);font-weight:700;font-size:.95rem;margin:0}
+h2{font-family:var(--serif);font-size:2rem;line-height:1.5;margin:.1rem 0 1.25rem}
+h3{font-family:var(--serif);font-size:1.35rem;margin:2rem 0 .6rem}
+.prose{max-width:44rem}.prose p{margin:0 0 .8rem}
+.problem{background:var(--surface);border-inline-start:4px solid var(--a);padding:.9rem 1.25rem;max-width:44rem}
+.problem p{margin:0}
+.quotes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.25rem}
+.quotes li{background:var(--surface);border-top:2px solid var(--a);padding:.9rem 1.1rem}
+.qtext{font-family:var(--serif);font-size:1.2rem;line-height:1.9;margin:0 0 .5rem}
+.qsrc{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}.qsrc b{color:var(--ink)}
+.theses,.args,.ideas{list-style:none;margin:0;padding:0;max-width:44rem}
+.theses li{border-inline-start:3px solid var(--a);padding:.2rem 1rem;margin-bottom:1rem}
+.theses p{margin:.2rem 0 0}
+.args li,.ideas li{padding:.7rem 0;border-top:1px solid var(--rule)}
+.args li:last-child,.ideas li:last-child{border-bottom:1px solid var(--rule)}
+.label{font-weight:700;color:var(--a)}
+.concepts{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem;margin:0}
+.concept{padding:.7rem 0;border-top:1px solid var(--rule)}
+.concepts dt{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--a)}
+.concepts dd{margin:0;font-family:var(--sans)}
+@media (max-width:639px){.concepts{grid-template-columns:1fr}.hero h1{font-size:2.1rem}}
+@media print{body{background:#fff;color:#000}.nav{display:none}.hero{background:#fff;color:#000}.lede,.qsrc,.qsrc b,.label,.kicker,.concepts dt,a{color:#000}.quotes li,.problem{background:#fff}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>الحق والعدالة</h1>
+    <p class="lede">محاور المفهوم الثلاثة، مع الأقوال والآراء الحجاجية والحجج والأفكار الحجاجية.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="التنقل في الصفحة">
+  <div class="wrap">
+    <a href="#intro">التقديم</a>
+    <a href="#right-and-justice-axis-1">الحق بين الطبيعي والوضعي</a>
+    <a href="#right-and-justice-axis-2">العدالة باعتبارها أساسًا للحق</a>
+    <a href="#right-and-justice-axis-3">العدالة بين المساواة والإنصاف</a>
+    <a href="#glossary">المفاهيم</a>
+  </div>
+</nav>
+
+<section id="intro" class="block">
+  <div class="wrap">
+    <p class="kicker">التقديم</p>
+    <h2>تعريف المجزوءة وتقديمها</h2>
+
+    <h3>تعريف المجزوءة</h3>
+    <div class="prose">
+      <p>المجزوءة وحدة تعليمية من برنامج مادة الفلسفة في سلك البكالوريا، تنطلق من مفهوم فلسفي أو أكثر، فتفكك عناصره، وتطرح حوله إشكالات، وتدرسه بالتحليل المفهومي والحجاج، بغية الوصول إلى فهم نقدي له.</p>
+    </div>
+
+    <h3>مفهوم السياسة</h3>
+    <div class="prose">
+      <p>السياسة في اللغة من «ساس» الأمر، أي دبّره وقام عليه. وتعود الكلمة في أصلها الغربي إلى اليونانية «polis» أي المدينة، فالسياسة في أصلها شأن المدينة وأهلها. وهي في الفلسفة النشاط الذي تُدار به شؤون الجماعة وتُنظم به علاقات أفرادها، سعيًا إلى الخير المشترك.</p>
+      <p>وللسياسة أربعة أبعاد متداخلة: تدبير الشأن العام، والحكم والسلطة، والصراع والتوافق بين المصالح، والبحث عن الخير المشترك والعدل.</p>
+    </div>
+    <ul class="args">
+      <li><span class="label">أرسطو:</span> السياسة أسمى العلوم العملية، غايتها الحياة الفاضلة للجماعة، والإنسان كائن سياسي بطبعه.</li>
+      <li><span class="label">أفلاطون:</span> السياسة فن الحكم القائم على المعرفة، فلا يصلح للحكم إلا من يعرف الخير والعدل.</li>
+      <li><span class="label">ميكيافيلي:</span> السياسة فن ممارسة السلطة بما يناسب الواقع، وتُقاس بقدرتها على حفظ الدولة لا بمثاليتها الأخلاقية.</li>
+    </ul>
+    <div class="prose">
+      <p>وتختلف السياسة عن مفهوم «الحق والعدالة»، فالسياسة نشاط وممارسة حول السلطة والقرار، أما الحق والعدالة فمعياران يُحاكم بهما هذا النشاط، ويُسألان عن أساس القانون وحدود السلطة.</p>
+    </div>
+    <ol class="quotes">
+      <li>
+        <p class="qtext">«الإنسان حيوان سياسي بطبعه».</p>
+        <p class="qsrc"><b>أرسطو</b><br>السياسة، الكتاب الأول</p>
+      </li>
+      <li>
+        <p class="qtext">«على الأمير الذي يريد أن يحفظ سلطته أن يتعلم كيف لا يكون خيّرًا».</p>
+        <p class="qsrc"><b>ميكيافيلي</b><br>الأمير، الفصل الخامس عشر</p>
+      </li>
+    </ol>
+
+    <h3>الإشكالية المركزية</h3>
+    <div class="prose">
+      <p>على أي أساس يقوم الحق: على الطبيعة أم على القانون؟ وما صلة العدالة بالحق؟ وهل تتحقق العدالة بالمساواة بين الجميع أم بالإنصاف ومراعاة الفروق؟</p>
+    </div>
+
+    <h3>الكفايات المنتظرة</h3>
+    <ul class="args">
+      <li><span class="label">التحليل المفهومي:</span> ضبط معنى الحق والعدالة وتمييز كل منهما من المفاهيم المجاورة، كالقانون والمساواة والإنصاف.</li>
+      <li><span class="label">صوغ الإشكال:</span> طرح الأسئلة المتعلقة بأساس الحق وبعلاقته بالعدالة وبمعيار العدل.</li>
+      <li><span class="label">الحجاج:</span> بناء أطروحة مدعومة بالأقوال والحجج، ومناقشة الاعتراضات الممكنة عليها.</li>
+      <li><span class="label">النقد:</span> تقويم الآراء المختلفة، والتمييز بين القانون العادل والقانون الذي يخالف الحق.</li>
+    </ul>
+
+    <h3>مفاهيم المجزوءة</h3>
+    <ul class="args">
+      <li>الدولة</li>
+      <li><a href="#right-and-justice">الحق والعدالة</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="right-and-justice" class="block">
+  <div class="wrap">
+    <p class="kicker">المفهوم</p>
+    <h2>الحق والعدالة</h2>
+  </div>
+</section>
+
+<section id="right-and-justice-axis-1" class="block axis-1">
+  <div class="wrap">
+    <p class="kicker">المحور 1</p>
+    <h2>الحق بين الطبيعي والوضعي</h2>
+
+    <h3>الإشكال</h3>
+    <div class="problem">
+      <p>هل الحق معطى طبيعي سابق على المجتمع والقانون، أم هو من صنع القانون الوضعي؟ وما العلاقة بين الحقوق الطبيعية والقوانين الوضعية؟</p>
+    </div>
+
+    <h3>الأقوال</h3>
+    <ol class="quotes">
+      <li>
+        <p class="qtext">يميّز أرسطو في العدل السياسي بين ما هو طبيعي وما هو وضعي.</p>
+        <p class="qsrc"><b>أرسطو</b><br>الأخلاق إلى نيقوماخوس، الكتاب الخامس</p>
+      </li>
+      <li>
+        <p class="qtext">يرى لوك أن قانون الطبيعة هو العقل، وأنه يمنع الإضرار بالغير في حياته وحريته وممتلكاته.</p>
+        <p class="qsrc"><b>لوك</b><br>رسالتان في الحكم المدني، الرسالة الثانية، الفصل الثاني</p>
+      </li>
+      <li>
+        <p class="qtext">«الحق هو حرية أن يفعل المرء أو يمتنع عن الفعل، أما القانون فيحدد أحدهما ويُلزم به».</p>
+        <p class="qsrc"><b>هوبز</b><br>اللوياثان، الفصل الرابع عشر</p>
+      </li>
+      <li>
+        <p class="qtext">يرى سبينوزا أن حق كل فرد يمتد بقدر قدرته.</p>
+        <p class="qsrc"><b>سبينوزا</b><br>رسالة في اللاهوت والسياسة، الفصل السادس عشر</p>
+      </li>
+      <li>
+        <p class="qtext">«قبل أن توجد قوانين وضعية كانت هناك علاقات عدل ممكنة».</p>
+        <p class="qsrc"><b>مونتسكيو</b><br>روح القوانين، الكتاب الأول، الفصل الأول</p>
+      </li>
+      <li>
+        <p class="qtext">«الحق في أن يكون للمرء حقوق».</p>
+        <p class="qsrc"><b>حنة أرندت</b><br>أصول التوتاليتارية، الفصل التاسع</p>
+      </li>
+    </ol>
+
+    <h3>الآراء الحجاجية</h3>
+    <ul class="theses">
+      <li>
+        <strong>الحقوق الطبيعية سابقة على الدولة والقانون.</strong>
+        <p>وهذا رأي لوك، والحجة أن قانون الطبيعة يلزم الجميع بالعقل، فلا يجوز لأحد أن يعتدي على حياة غيره وحريته وملكه.</p>
+      </li>
+      <li>
+        <strong>الحق الوضعي هو الحق الفعلي لأنه وحده ملزم.</strong>
+        <p>وهذا رأي هوبز، والحجة أن الحق الطبيعي حرية بلا ضمان، فلا يكتسب قوة الإلزام إلا بقانون تحميه سلطة.</p>
+      </li>
+      <li>
+        <strong>الحق يتحدد بقدرة صاحبه.</strong>
+        <p>وهذا رأي سبينوزا، والحجة أن كل كائن يسعى بطبعه إلى حفظ ذاته، فيملك من الحق بقدر ما يملك من القدرة.</p>
+      </li>
+      <li>
+        <strong>الحقوق الإنسانية لا تصير فعلية إلا بالانتماء إلى جماعة سياسية.</strong>
+        <p>وهذا رأي أرندت، والحجة أن من فقد صفة المواطنة فقد حماية القانون، فيبقى حقه الإنساني بلا ضامن.</p>
+      </li>
+    </ul>
+
+    <h3>الحجاج</h3>
+    <ul class="args">
+      <li><span class="label">حجة العقل:</span> يدرك العقل قبل أي قانون مكتوب أن الاعتداء على الحياة والحرية ظلم، فللحق أصل طبيعي (لوك).</li>
+      <li><span class="label">حجة الضمان:</span> الحق الذي لا تحميه سلطة يبقى ادعاءً، فالقانون الوضعي هو ما يحوّل الحق إلى واقع (هوبز).</li>
+      <li><span class="label">حجة التمييز:</span> لا يُختزل الحق في القانون المكتوب وحده، إذ يميز أرسطو بين العدل الطبيعي والعدل الوضعي.</li>
+      <li><span class="label">حجة مضادة:</span> يعترض أنصار الوضعية بأن الحق الطبيعي لا يُعرف إلا بالاختلاف، فكل فريق يدعي أن قانون الطبيعة يؤيده. ويُجاب بأن اختلاف الناس في تحديده لا ينفي وجود معيار عقلي يُحاكم به القانون الوضعي، وتبقى طبيعة هذا المعيار مسألة مفتوحة.</li>
+    </ul>
+
+    <h3>الأفكار الحجاجية</h3>
+    <ul class="ideas">
+      <li>الحق الطبيعي معيار نقدي يُحاكم به القانون الوضعي، والقانون الوضعي وسيلة لتحقيقه.</li>
+      <li>القانون الذي يخالف الحقوق الأساسية يفقد مشروعيته الأخلاقية وإن كان نافذًا.</li>
+      <li>التقابل بين الطبيعي والوضعي ليس تناقضًا دائمًا، فقد يكون بينهما تكامل.</li>
+      <li>إعلانات حقوق الإنسان محاولة لتحويل الحقوق الطبيعية إلى حقوق وضعية.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="right-and-justice-axis-2" class="block axis-2">
+  <div class="wrap">
+    <p class="kicker">المحور 2</p>
+    <h2>العدالة باعتبارها أساسًا للحق</h2>
+
+    <h3>الإشكال</h3>
+    <div class="problem">
+      <p>هل تؤسس العدالة الحق، أم أن الحق هو الذي يحدد ما هو عادل؟ وهل يستمد القانون مشروعيته من عدالته؟</p>
+    </div>
+
+    <h3>الأقوال</h3>
+    <ol class="quotes">
+      <li>
+        <p class="qtext">يرى أفلاطون أن العدالة أن يؤدي كل فرد عمله الخاص ولا يتدخل فيما ليس له.</p>
+        <p class="qsrc"><b>أفلاطون</b><br>الجمهورية، الكتاب الرابع</p>
+      </li>
+      <li>
+        <p class="qtext">يرى أرسطو أن العدل رباط الناس في الدولة ومبدأ نظامها.</p>
+        <p class="qsrc"><b>أرسطو</b><br>السياسة، الكتاب الأول</p>
+      </li>
+      <li>
+        <p class="qtext">«القوة لا تصنع حقًّا، ولا يجب الخضوع إلا للسلطات المشروعة».</p>
+        <p class="qsrc"><b>روسو</b><br>العقد الاجتماعي، الكتاب الأول، الفصل الثالث</p>
+      </li>
+      <li>
+        <p class="qtext">يرى هيوم أن العدالة فضيلة اصطناعية تنشأ بالاتفاق لمنفعتها العامة.</p>
+        <p class="qsrc"><b>هيوم</b><br>رسالة في الطبيعة البشرية، الكتاب الثالث</p>
+      </li>
+      <li>
+        <p class="qtext">«الظلم مؤذن بخراب العمران».</p>
+        <p class="qsrc"><b>ابن خلدون</b><br>المقدمة، فصل في أن الظلم مؤذن بخراب العمران</p>
+      </li>
+      <li>
+        <p class="qtext">«حيث لا توجد سلطة مشتركة لا يوجد قانون، وحيث لا يوجد قانون لا يوجد ظلم».</p>
+        <p class="qsrc"><b>هوبز</b><br>اللوياثان، الفصل الثالث عشر</p>
+      </li>
+    </ol>
+
+    <h3>الآراء الحجاجية</h3>
+    <ul class="theses">
+      <li>
+        <strong>العدالة أساس الحق، فلا حق بلا عدل.</strong>
+        <p>وهذا رأي أفلاطون، والحجة أن العدالة نظام يؤدي فيه كل فرد وظيفته، فيستقيم به المجتمع وتتحدد به حقوق أفراده.</p>
+      </li>
+      <li>
+        <strong>القوة لا تصنع الحق.</strong>
+        <p>وهذا رأي روسو، والحجة أن الخضوع للقوة اضطرار لا واجب، فلا يلتزم الناس إلا بالسلطة المشروعة.</p>
+      </li>
+      <li>
+        <strong>العدالة اصطناعية تنشأ من الاتفاق لا من الطبيعة.</strong>
+        <p>وهذا رأي هيوم، والحجة أن الناس أدركوا منفعة احترام الملكية والعهود فتواضعوا عليها.</p>
+      </li>
+      <li>
+        <strong>العدل شرط لبقاء العمران.</strong>
+        <p>وهذا رأي ابن خلدون، والحجة أن الظلم يُذهب الأمل في الكسب فيضعف العمل والإنتاج، وتنتهي الدولة إلى الخراب.</p>
+      </li>
+    </ul>
+
+    <h3>الحجاج</h3>
+    <ul class="args">
+      <li><span class="label">حجة الوظيفة:</span> لكل فرد وظيفة تناسب استعداداته، فإذا أداها تحقق العدل وتحددت حقوقه وواجباته (أفلاطون).</li>
+      <li><span class="label">حجة المشروعية:</span> لا ينشأ الحق من الغلبة بل من اتفاق عادل، والسلطة التي تخالف العدل تفقد مشروعيتها (روسو).</li>
+      <li><span class="label">حجة العمران:</span> غياب العدل يفسد الاجتماع ويهدد استمرار الدولة (ابن خلدون).</li>
+      <li><span class="label">حجة مضادة:</span> يرى هوبز أنه لا ظلم حيث لا قانون، فالعدالة نتيجة القانون لا أساسه. ويُجاب بأن القانون الجائر يُنقد بمعيار العدل، ولولاه ما أمكن وصف قانون بأنه ظالم، وتبقى مسألة أصل هذا المعيار بين الطبيعة والاتفاق مفتوحة.</li>
+    </ul>
+
+    <h3>الأفكار الحجاجية</h3>
+    <ul class="ideas">
+      <li>العدالة قيمة معيارية، والحق صورتها المعلنة في القانون.</li>
+      <li>قد يكون القانون نافذًا وغير عادل.</li>
+      <li>العدل مصلحة للجميع لا مصلحة الأقوى وحده.</li>
+      <li>العدالة تؤسس الثقة بين المحكومين والحاكم.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="right-and-justice-axis-3" class="block axis-3">
+  <div class="wrap">
+    <p class="kicker">المحور 3</p>
+    <h2>العدالة بين المساواة والإنصاف</h2>
+
+    <h3>الإشكال</h3>
+    <div class="problem">
+      <p>هل تتحقق العدالة بالمساواة بين الجميع، أم بمراعاة الفروق والاستحقاق، أي بالإنصاف؟ وهل يمكن الجمع بينهما؟</p>
+    </div>
+
+    <h3>الأقوال</h3>
+    <ol class="quotes">
+      <li>
+        <p class="qtext">يرى أرسطو أن الإنصاف تصحيح للعدل القانوني حيث يقصر القانون لعمومه.</p>
+        <p class="qsrc"><b>أرسطو</b><br>الأخلاق إلى نيقوماخوس، الكتاب الخامس</p>
+      </li>
+      <li>
+        <p class="qtext">يميّز أفلاطون بين مساواة حسابية ومساواة بحسب الاستحقاق، ويرى أن التسوية بين غير المتساوين تنتج لا مساواة.</p>
+        <p class="qsrc"><b>أفلاطون</b><br>القوانين، الكتاب السادس</p>
+      </li>
+      <li>
+        <p class="qtext">يميّز روسو بين تفاوت طبيعي وتفاوت أخلاقي سياسي يقوم على الاتفاق.</p>
+        <p class="qsrc"><b>روسو</b><br>خطاب في أصل التفاوت بين الناس</p>
+      </li>
+      <li>
+        <p class="qtext">«روح المساواة الحقيقية بعيدة عن روح المساواة المتطرفة بُعد السماء عن الأرض».</p>
+        <p class="qsrc"><b>مونتسكيو</b><br>روح القوانين، الكتاب الثامن، الفصل الثالث</p>
+      </li>
+      <li>
+        <p class="qtext">يرى لوك أن الحالة الطبيعية حالة مساواة، لا يملك أحد فيها سلطة أو ولاية أكثر من غيره.</p>
+        <p class="qsrc"><b>لوك</b><br>رسالتان في الحكم المدني، الرسالة الثانية، الفصل الثاني</p>
+      </li>
+      <li>
+        <p class="qtext">يرى هيوم أن تسوية الملكيات تنهار سريعًا بفعل تفاوت الناس في الجهد والمهارة.</p>
+        <p class="qsrc"><b>هيوم</b><br>بحث في مبادئ الأخلاق، القسم الثالث</p>
+      </li>
+    </ol>
+
+    <h3>الآراء الحجاجية</h3>
+    <ul class="theses">
+      <li>
+        <strong>العدالة مساواة بين الجميع أمام القانون.</strong>
+        <p>وهذا رأي لوك، والحجة أن الناس متساوون بطبيعتهم، فتقتضي العدالة أن يُعاملوا بالقانون نفسه.</p>
+      </li>
+      <li>
+        <strong>العدالة تقتضي مراعاة الاستحقاق والفروق.</strong>
+        <p>وهذا رأي أفلاطون، والحجة أن التسوية بين غير المتساوين تنتج ظلمًا جديدًا.</p>
+      </li>
+      <li>
+        <strong>الإنصاف تصحيح للقانون في الحالات الخاصة.</strong>
+        <p>وهذا رأي أرسطو، والحجة أن القانون عام فيقصر عن الجزئيات، فيأتي الإنصاف ليستدرك هذا النقص.</p>
+      </li>
+      <li>
+        <strong>المساواة المطلقة غير ممكنة.</strong>
+        <p>وهذا رأي هيوم، والحجة أن تفاوت الجهد والمهارة يهدم أي تسوية للملكيات، ولا تُحفظ إلا برقابة صارمة.</p>
+      </li>
+    </ul>
+
+    <h3>الحجاج</h3>
+    <ul class="args">
+      <li><span class="label">حجة المساواة:</span> الناس متساوون في الكرامة والحقوق، فالتمييز بينهم بلا سبب مشروع ظلم (لوك).</li>
+      <li><span class="label">حجة الاستحقاق:</span> العدل أن يُعطى كل ذي حق حقه بحسب جهده وكفاءته، لا تسوية حسابية بين الجميع (أفلاطون).</li>
+      <li><span class="label">حجة التفاوت:</span> يختلف التفاوت الطبيعي عن التفاوت الاجتماعي، والثاني وحده يحتاج إلى تبرير، فالإنصاف رفع للفروق التي لا مبرر لها (روسو).</li>
+      <li><span class="label">حجة مضادة:</span> يُقال إن الإنصاف يفتح باب التقدير الذاتي فيهدد المساواة أمام القانون. ويُجاب بأنه يعمل داخل القانون ويحقق قصده (أرسطو)، ويبقى تحديد معيار الاستحقاق موضع خلاف مفتوح.</li>
+    </ul>
+
+    <h3>الأفكار الحجاجية</h3>
+    <ul class="ideas">
+      <li>المساواة والإنصاف طريقان إلى غاية واحدة هي العدالة.</li>
+      <li>المساواة الصورية أمام القانون قد تخفي لا مساواة فعلية في الفرص.</li>
+      <li>الإنصاف يعالج قصور القاعدة العامة ولا يلغيها.</li>
+      <li>تحقيق العدالة يقتضي معيارًا معلنًا للاستحقاق.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="glossary" class="block glossary-block">
+  <div class="wrap">
+    <p class="kicker">المفاهيم</p>
+    <h2>المفاهيم</h2>
+    <dl class="concepts">
+      <div class="concept"><dt>الحق</dt><dd>ما يحق للإنسان أن يطالب به ويتمتع به، وهو إما طبيعي أو وضعي.</dd></div>
+      <div class="concept"><dt>الحق الطبيعي</dt><dd>حق يُستمد من الطبيعة الإنسانية والعقل، وهو سابق على المجتمع والقانون.</dd></div>
+      <div class="concept"><dt>الحق الوضعي</dt><dd>حق يقرره القانون ويحميه، ويتغير بتغير المجتمعات والأزمنة.</dd></div>
+      <div class="concept"><dt>القانون الطبيعي</dt><dd>مبادئ عامة يدركها العقل وتُنسب إلى الطبيعة الإنسانية لا إلى إرادة المشرّع.</dd></div>
+      <div class="concept"><dt>القانون الوضعي</dt><dd>قواعد عامة ملزمة تضعها سلطة مختصة في مجتمع معين، ويقترن بجزاء عند مخالفتها.</dd></div>
+      <div class="concept"><dt>الحالة الطبيعية</dt><dd>الوضع المفترض للإنسان قبل قيام المجتمع السياسي، ويختلف تصورها من فيلسوف إلى آخر.</dd></div>
+      <div class="concept"><dt>العقد الاجتماعي</dt><dd>اتفاق افتراضي بين الأفراد يتنازلون بموجبه عن جزء من حريتهم لسلطة تضمن الأمن والحقوق.</dd></div>
+      <div class="concept"><dt>حقوق الإنسان</dt><dd>حقوق يُقر بها لكل إنسان لكونه إنسانًا، دون تمييز بسبب الجنس أو الدين أو الأصل.</dd></div>
+      <div class="concept"><dt>الكرامة</dt><dd>القيمة التي يتمتع بها كل إنسان لذاته، وتقتضي احترامه وعدم معاملته وسيلة فحسب.</dd></div>
+      <div class="concept"><dt>العدالة</dt><dd>فضيلة وقاعدة تقتضي إعطاء كل ذي حق حقه، وتنظيم العلاقات بين الناس على وجه منصف.</dd></div>
+      <div class="concept"><dt>الظلم</dt><dd>الاعتداء على حق الغير أو حرمانه منه، وهو نقيض العدل.</dd></div>
+      <div class="concept"><dt>المساواة</dt><dd>معاملة الأفراد بالقواعد نفسها، أو الاعتراف لهم بالحقوق نفسها.</dd></div>
+      <div class="concept"><dt>المساواة الحسابية</dt><dd>تسوية تعطي الجميع نصيبًا واحدًا دون نظر إلى الفروق بينهم.</dd></div>
+      <div class="concept"><dt>المساواة النسبية</dt><dd>تسوية توزع الحقوق بحسب الاستحقاق، فيُعطى كل فرد بنسبة ما يستحق.</dd></div>
+      <div class="concept"><dt>الإنصاف</dt><dd>تصحيح للقاعدة العامة في الحالات الخاصة، لتحقيق العدل حيث يقصر القانون لعمومه.</dd></div>
+      <div class="concept"><dt>العدالة التوزيعية</dt><dd>توزيع الخيرات والأعباء والمناصب بين أفراد المجتمع على أساس معيار معلن.</dd></div>
+      <div class="concept"><dt>العدالة التبادلية</dt><dd>إنصاف في المعاملات بين الأفراد، بحيث يأخذ كل طرف ما يعادل ما يعطي.</dd></div>
+      <div class="concept"><dt>الاستحقاق</dt><dd>ما يستوجبه الفرد من حق أو جزاء بسبب جهده أو كفاءته أو عمله.</dd></div>
+      <div class="concept"><dt>تكافؤ الفرص</dt><dd>تمكين جميع الأفراد من شروط متقاربة في التعليم والعمل، حتى يتحدد مآلهم بجهدهم.</dd></div>
+      <div class="concept"><dt>الشرعية</dt><dd>مطابقة التصرف أو السلطة للقانون النافذ، وهي لا تنظر في عدالة القانون ذاته.</dd></div>
+    </dl>
+  </div>
+</section>
+</body>
+</html>
